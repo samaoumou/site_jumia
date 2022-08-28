@@ -1,8 +1,10 @@
 .tete{
-    background-color:white;
     width: 100%;
     height: 80px;
     display: flex;
+   /*  margin: auto; */
+    justify-content: center;
+    background-color: #ff9a00;
 }
 .milieu{
     background-color:#f5f5f5;
@@ -12,16 +14,18 @@
 }
 .fin{
     background-color:white;
-    width: 100%;
+    width: 900px;
     height: 150px;
     margin-top: 10px;
+    /* margin-right: 25px; */
+    margin: auto;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
 }
 .gauche{
     width: 300px;
     height: 380px;
-    background-color:white;
+    background-color:darkred;
     margin: auto;
 }
 .centre{
@@ -56,8 +60,16 @@
     justify-content:space-evenly;
     height: 25px;
     align-items: center;
-    width: 150px;
+    width: 500px;
     margin: auto;
+}
+.hum{
+    display: flex;
+    justify-content:space-around;
+    height: 25px;
+    align-items: center;
+    width: 300px;
+    margin-right: 50px; 
 }
 .util0{
     margin-left: 10px;
@@ -78,7 +90,8 @@
     margin: auto;
 }
 body{
-    background-color:#f5f5f5;
+     background-color:#f5f5f5; 
+    /* background-color: darkred; */
 }
 .Imilieu{
     height: 25px;
@@ -97,28 +110,52 @@ button{
     background-color: #ff9a00;
 }
 .mySlides {display:none;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer; }
+.w3-badge {height:13px;width:13px;padding:0}
 .haut{
     width: 300px;
     height: 200px;
-    background-color:white;
+    background-color:darkred;
     margin-bottom: 5px;
     border-radius: 7px;
 }
 .bas{
     width: 300px;
-    height: 200px;
+    height: 160px;
     background-color:white;
     border-radius: 7px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 p{
-    font-size: 10px;
+    font-size: 15px;
 }
-.souf{
-    background-color: aqua;
-    width: 130px; 
-    height: 130px;
-    margin: auto;
+#myContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background:white;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+  }
+#myAnimation {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    background-color:white;
+    display: flex;
+  }
+.img{
+	width: 130px;
+    height: 100%;
+    margin: 5px;
+    background-color:white;
+}
+.bob{ 
+    justify-content: center;
+    width: 900px;
+    align-items: center;
 }
