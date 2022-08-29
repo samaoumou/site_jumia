@@ -14,7 +14,7 @@
 }
 .fin{
     background-color:white;
-    width: 900px;
+    width: 90%;
     height: 150px;
     margin-top: 10px;
     /* margin-right: 25px; */
@@ -138,8 +138,9 @@ p{
     background:white;
     margin-right: 50px;
     justify-content: center;
-    align-items: center;
-    overflow-x: scroll;
+    /* align-items: center; */
+    overflow-x:scroll;
+    overflow-y:hidden; 
   }
 #myAnimation {
     width: 100%;
@@ -147,6 +148,7 @@ p{
     /* position: absolute; */
     background-color:white;
     display: flex;
+    transition-duration: 1s;
   }
 .img{
 	width: 130px;
@@ -156,6 +158,45 @@ p{
 }
 .bob{ 
     justify-content: center;
-    width: 900px;
+    width: 100%;
     align-items: center;
+    display: flex;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.aniRight{
+    transform: translate(-895px,0px);
+}
+.aniLeft{
+    transform: translate(0px,0px);
+}
+.container-right-bottom{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 6px;
+}
+.container-left-bottom{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 7px;
+}
+.left-bottom{
+    
+    top: 180Px;
+    color: #f5f5f5;
+    font-size: 15px;
+    background-color: rgb(88 89 83 /55%);
+    width: 40px;
+}
+.right-bottom{
+    top: 180Px;
+    color: #f5f5f5;
+    font-size: 15px;
+    background-color: rgb(88 89 83 /55%);
+    width: 40px;
+    margin-top: 0px;
+    margin-right: 0px;
 }
