@@ -132,3 +132,8 @@ function normalImg(x) { /* changement de couleur */
   x.style.width = "auto";
   x.style.color="black";
 }
+function bigImg1(x) {
+  x.style.height = "34px"; 
+  /* x.style.width = "64px"; */
+  x.style.color="blue";
+}
