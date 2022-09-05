@@ -1,4 +1,4 @@
- /* pour changer les boutton à l'aide d'un simple clique dans les deux bouttons */
+ /* pour changer les photos  à l'aide d'un simple clique dans les deux bouttons */
 var slideIndex = 1;            /* initialiser le compteur à 1 */
 showDivs(slideIndex);           /* appelle directe de la fonction showDivs */
 function plusDivs(n) {  /* déclaration de la fonction plusdivs qui pendra comme n en parametre 
@@ -106,6 +106,7 @@ window.addEventListener("scroll",()=>{
     toTop.classList.remove('active');
   }
 } */
+/* cette fonction gere les slides en bas */
 function myMove(direction){
   var direction;
   if(direction == 1){
@@ -120,3 +121,14 @@ function myMove(direction){
   }
 }
 window.onload = autoDisplay;
+
+function bigImg(x) {
+  x.style.height = "34px"; 
+  /* x.style.width = "64px"; */
+  x.style.color="red";
+}
+function normalImg(x) { /* changement de couleur */
+  x.style.height = "auto";
+  x.style.width = "auto";
+  x.style.color="black";
+}
