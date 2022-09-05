@@ -25,7 +25,7 @@
 .gauche{
     width: 300px;
     height: 380px;
-    background-color:darkred;
+    background-color:rgb(250, 242, 242);
     margin: auto;
 }
 .centre{
@@ -60,7 +60,7 @@
     justify-content:space-evenly;
     height: 25px;
     align-items: center;
-    width: 500px;
+    width: 300px;
     margin: auto;
 }
 .hum{
@@ -118,7 +118,7 @@ button{
 .haut{
     width: 300px;
     height: 200px;
-    background-color:darkred;
+    background-color:rgb(247, 242, 242);
     margin-bottom: 5px;
     border-radius: 7px;
 }
