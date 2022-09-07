@@ -123,7 +123,7 @@ function myMove(direction){
 window.onload = autoDisplay;
 
 function bigImg(x) {
-  x.style.height = "34px"; 
+  /* x.style.height = "34px";  */
   /* x.style.width = "64px"; */
   x.style.color="red";
 }
@@ -133,7 +133,7 @@ function normalImg(x) { /* changement de couleur */
   x.style.color="black";
 }
 function bigImg1(x) {
-  x.style.height = "34px"; 
+  /* x.style.height = "14px"; */ 
   /* x.style.width = "64px"; */
   x.style.color="blue";
 }
