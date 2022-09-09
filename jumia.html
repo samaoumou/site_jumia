@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="ordi">
@@ -23,7 +24,8 @@
             </div>
             <div class="util">
                 <i class="fa-sharp fa-solid fa-utensils"></i><a href="https://food.jumia.sn/restaurants" onmouseover="bigImg(this)" onmouseout="normalImg(this)">FOOD</a>
-                <i class="fa-light fa-badge-dollar"></i><a href="https://deals.jumia.sn/" onmouseover="bigImg1(this)" onmouseout="normalImg(this)">deals</a>
+                <span class="material-symbols-outlined">
+                    waving_hand</span><a href="https://deals.jumia.sn/" onmouseover="bigImg1(this)" onmouseout="normalImg(this)">deals</a>
                 <i class="fa-solid fa-car-tunnel"></i><a href="https://www.jumia.sn/sp-jumia-services/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Logistique</a>
             </div>
         </div>
@@ -33,9 +35,14 @@
                 <input type="text" class="diop" value=" " placeholder="Rechercher votre prduit ici ISSA">
                 <button>RECHERCHE</button>
                 <div class="hum">
-                    <i class="fa fa-user" aria-hidden="true"></i><a href="https://www.jumia.sn/customer/account/index/" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Se connecter</a>
-                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i><a href="https://www.jumia.sn/sp-faq/" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Aide</a>
-                    <i class="fa fa-shopping-basket" aria-hidden="true"></i><a href="https://www.jumia.sn/cart/" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Panier</a>
+                    <i id="mm1" class="fa fa-user" aria-hidden="true"></i><a href="https://www.jumia.sn/customer/account/index/" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Se connecter</a>
+                    <i id="mm2" class="fa fa-exclamation-circle" aria-hidden="true"></i><a href="https://www.jumia.sn/sp-faq/" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Aide</a>
+                    <i id="mm3" class="fa fa-shopping-basket" aria-hidden="true"></i><a href="https://www.jumia.sn/cart/" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Panier</a>
+                </div>
+                <div id="BAR">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
                 </div>
             </div>    
         </div>
@@ -86,8 +93,8 @@
                     <img class="mySlides" src="nos_image/5.jpg">
                     <img class="mySlides" src="nos_image/6.jpg">
                     <div id="bb">
-                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        <button class="w3-button w3-black w3-display-left" id="bb1" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" id="bb2" onclick="plusDivs(1)">&#10095;</button>
                     </div>
                     <div id="but" class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
@@ -150,32 +157,8 @@
                     </div>                                 
         </div>
     </div>
-    <div class="smartphone">
-        <div class="tsmart">
-            <img src="nos_image/tete.jpg" alt="bien" width="90%">
-        </div>
-        <section class="tcentre">
-            <div class="w3-content w3-display-container">
-                <img class="tmySlides" src="nos_image/2.jpg">
-                <img class="tmySlides" src="nos_image/3.jpg">
-                <img class="tmySlides" src="nos_image/1.jpg">
-                <img class="tmySlides" src="nos_image/4.jpeg">
-                <img class="tmySlides" src="nos_image/5.jpg">
-                <img class="tmySlides" src="nos_image/6.jpg">
-                <div id="bb">
-                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                </div>
-                <div id="but" class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                </div>    
-            </div>                
-        </section>        
 
-    </div>
+
     <script src="jumia.js"></script>
 </body>
 </html>

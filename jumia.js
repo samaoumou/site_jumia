@@ -137,3 +137,16 @@ function bigImg1(x) {
   /* x.style.width = "64px"; */
   x.style.color="blue";
 }
+var Btn = document.getElementById("BAR");
+Btn.addEventListener("click",resp = () => 
+{
+    bar1 = document.getElementById("bar1");
+    bar2 = document.getElementById("bar2");
+    bar3 = document.getElementById("bar3");
+    menu = document.getElementById("menu");
+
+    bar1.classList.toggle("bar1Over");
+    bar2.classList.toggle("bar2Over");
+    bar3.classList.toggle("bar3Over");
+    menu.classList.toggle("affiche");
+})
